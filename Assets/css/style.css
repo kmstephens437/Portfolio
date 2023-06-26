@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+  }
+  
+  header {
+    background-image: linear-gradient(rgb(43, 97, 225), rgb(180, 202, 235),rgb(43, 97, 225));
+    font-style: italic;
+    padding: 40px;
+    text-align: center;
+    color: #fff;
+  }
+  
+/* moves nav bar items to far right*/
+
+  nav {
+    display: flex;
+    flex: 3;
+    justify-content: flex-end;
+  }
+  
+  nav a {
+    color: #ecf0f3;
+    padding: 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+/*allows content of main to line break and wrap below to avoid running off screen*/
+
+  main {
+    display: flex;
+    flex-wrap: wrap;    
+  }
+  
+  aside {
+    flex: 1;
+    background-image:url(https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    padding: 20px;
+  }
+
+/*border radius 50% makes the circle for profile pic*/
+
+  #profile-pic {
+    border-radius: 50%;
+    height: 20rem
+  }
+  
+  content {
+    flex: 3;
+    background-color: #b3dbea;
+    padding: 20px;
+  }
+  
+  .first-project {
+        background-color: #fff;
+    width: 100%;
+    padding: 20px;
+    height: 200px;
+    border: 1px solid black;
+  }
+
+  .second-project {
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+    height: 0px;
+    border: 1px solid black;
+  }
+  
+  footer {
+    padding: 20px;
+    text-align: center;
+    background-image: linear-gradient(rgb(43, 97, 225), rgb(180, 202, 235),rgb(43, 97, 225));
+    color: #fff;
+  }
+
+  /*changes direction of items from row to column*/
+  
+  @media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
+  
+
