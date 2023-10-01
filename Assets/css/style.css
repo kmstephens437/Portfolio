@@ -41,6 +41,8 @@
     flex: 1;
     background-image:url(https://images.pexels.com/photos/440731/pexels-photo-440731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     padding: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
 /*border radius 50% makes the circle for profile pic*/
